@@ -1,5 +1,9 @@
 package com.example;
 
+import org.junit.After;
+import org.junit.Assert;
+import org.junit.BeforeClass;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -17,6 +21,7 @@ public class DemoApplicationTests {
     {System.out.println("beforeClass addition");
     Assert.assertTrue(true);
     }
+    
     @After
     public void testSoustraire() throws Exception
     {System.out.println("after soustraire");}
@@ -26,6 +31,7 @@ public class DemoApplicationTests {
     @Test
     public void testMultiplier2() throws Exception
     {System.out.println("multiplier2");}
+    
     @Ignore
     @Test
 	public void testDiviser() throws Exception
