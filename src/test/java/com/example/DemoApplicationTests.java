@@ -37,6 +37,16 @@ public class DemoApplicationTests {
     }
     }
 	@Test
+    public  void addition_null_and_null_should_give_exception_return() throws Exception
+    {
+    try{
+    	DemoApplication.additionner(null, null);
+    	Assert.assertTrue(false);}
+    catch(Exception e){
+    	Assert.assertTrue(true);
+    }
+    }
+	@Test
     public void soustraire_two_integer_should_give_integer_return() throws Exception
     {
     if(DemoApplication.soustraire(5, 3)==2){
@@ -55,7 +65,16 @@ public class DemoApplicationTests {
     	Assert.assertTrue(true);
     }
     }
-
+	@Test
+    public  void soustraire_null_and_null_should_give_exception_return() throws Exception
+    {
+    try{
+    	DemoApplication.soustraire(null, null);
+    	Assert.assertTrue(false);}
+    catch(Exception e){
+    	Assert.assertTrue(true);
+    }
+    }
 	@Test
     public  void multiplier_two_integer_should_give_integer_return() throws Exception
     {
@@ -76,7 +95,16 @@ public class DemoApplicationTests {
     	Assert.assertTrue(true);
     }
     }
-    
+	@Test
+    public  void multiplier_null_and_null_should_give_exception_return() throws Exception
+    {
+    try{
+    	DemoApplication.multiplier(null, null);
+    	Assert.assertTrue(false);}
+    catch(Exception e){
+    	Assert.assertTrue(true);
+    }
+    }
 	@Test
     public  void diviser_two_integer_should_give_integer_return() throws Exception
     {
@@ -97,4 +125,14 @@ public class DemoApplicationTests {
     	Assert.assertTrue(true);
     }
     }
+
+	@Test
+    public  void diviser_null_and_null_should_give_exception_return() throws Exception
+    {
+    try{
+    	DemoApplication.diviser(null, null);
+    	Assert.assertTrue(false);}
+    catch(Exception e){
+    	Assert.assertTrue(true);
+    }}
 }
