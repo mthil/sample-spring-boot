@@ -16,24 +16,25 @@ public class DemoApplicationTests {
 	@Test
 	public void contextLoads() {
 	}
-	@BeforeClass
-    public static void testAddition() throws Exception
-    {System.out.println("beforeClass addition");
-    Assert.assertTrue(true);
-    }
-    
-    @After
-    public void testSoustraire() throws Exception
-    {System.out.println("after soustraire");}
-    @Test
-    public void multiplier() throws Exception
-    {    	System.out.println("multiplier");    }
-    @Test
-    public void testMultiplier2() throws Exception
-    {System.out.println("multiplier2");}
-    
-    @Ignore
-    @Test
-	public void testDiviser() throws Exception
-    {System.out.println("ignore test diviser");   }
+	
+//	@BeforeClass
+//    public static void testAddition() throws Exception
+//    {System.out.println("beforeClass addition");
+//    Assert.assertTrue(true);
+//    }
+//	
+//    @After
+//    public void testSoustraire() throws Exception
+//    {System.out.println("after soustraire");}
+//    @Test
+//    public void multiplier() throws Exception
+//    {    	System.out.println("multiplier");    }
+//    @Test
+//    public void testMultiplier2() throws Exception
+//    {System.out.println("multiplier2");}
+//    
+//    @Ignore
+//    @Test
+//	public void testDiviser() throws Exception
+//    {System.out.println("ignore test diviser");   }
 }
