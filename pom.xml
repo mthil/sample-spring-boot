@@ -4,7 +4,7 @@
 
 	<groupId>com.example</groupId>
 	<artifactId>demo</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0.0-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
 	<name>demo</name>
@@ -21,7 +21,7 @@
 		<!--<url>https://mthil:Moustic16121980@github.com/mthil/sample-spring-boot.git</url>
 		<connection>scm:git:git://github.com/mthil/sample-spring-boot.git</connection>-->
 		<developerConnection>scm:git:https://mthil:Moustic16121980@github.com/mthil/sample-spring-boot.git</developerConnection>
-	  <tag>demo-0.0.1</tag>
+	  <tag>demo-1.0.0</tag>
   </scm>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
