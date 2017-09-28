@@ -16,11 +16,12 @@
 		 <version>1.5.3.RELEASE</version>
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
+	
 	<scm>
-		<url>https://github.com/mthil/sample-spring-boot.git</url>
-		<connection>scm:git:git://github.com/mthil/sample-spring-boot.git</connection>
+		<url>https://mthil:Moustic16121980@github.com/mthil/sample-spring-boot.git</url>
+		<!--<connection>scm:git:git://github.com/mthil/sample-spring-boot.git</connection>
 		<developerConnection>scm:git:git@github.com:mthil/sample-spring-boot.git</developerConnection>
-	  <tag>demo-0.0.1</tag>
+	  <tag>demo-0.0.1</tag>-->
   </scm>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
