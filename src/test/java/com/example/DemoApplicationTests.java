@@ -17,28 +17,44 @@ public class DemoApplicationTests {
 	public void contextLoads() {
 	}
 	
-	@BeforeClass
-    public static void testAddition() throws Exception
-    {System.out.println("beforeClass addition");
-    if(DemoApplication.additionner(5, 3)==8){
+	@Test
+    public  void addition_two_integer_should_give_integer_return() throws Exception
+    {System.out.println("addition_two_integer_should_give_integer_resposne");
+    if(DemoApplication.additionner(5,3)==8){
     Assert.assertTrue(true);
     }else{
-    	Assert.assertTrue(false);
+    Assert.assertTrue(false);
     }
     }
-	
-    @After
-    public void testSoustraire() throws Exception
-    {System.out.println("after soustraire");}
-    @Test
-    public void multiplier() throws Exception
-    {    	System.out.println("multiplier");    }
-    @Test
-    public void testMultiplier2() throws Exception
-    {System.out.println("multiplier2");}
-    
-    @Ignore
-    @Test
-	public void testDiviser() throws Exception
-    {System.out.println("ignore test diviser");   }
+	@Test
+    public  void addition_integer_and_null_should_give_exception_return() throws Exception
+    {
+		System.out.println("addition_two_integer_should_give_integer_resposne");
+    try{
+    	DemoApplication.additionner(5, null);
+    	Assert.assertTrue(false);}
+    catch(Exception e){
+    	Assert.assertTrue(true);
+    }
+    }
+	@Test
+    public void soustraire_two_integer_should_give_integer_return() throws Exception
+    {System.out.println("after soustraire");
+    if(DemoApplication.soustraire(5, 3)==2){
+        Assert.assertTrue(true);
+        }else{
+        	Assert.assertTrue(false);
+        }
+    }
+//    @Test
+//    public void multiplier() throws Exception
+//    {    	System.out.println("multiplier");    }
+//    @Test
+//    public void testMultiplier2() throws Exception
+//    {System.out.println("multiplier2");}
+//    
+//    
+//    @Test
+//	public void testDiviser() throws Exception
+//    {System.out.println("ignore test diviser");   }
 }
