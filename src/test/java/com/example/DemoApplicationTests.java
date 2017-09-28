@@ -1,11 +1,9 @@
 package com.example;
 
-import org.junit.After;
 import org.junit.Assert;
-import org.junit.BeforeClass;
-import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.springframework.boot.SpringApplication;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
@@ -135,4 +133,10 @@ public class DemoApplicationTests {
     catch(Exception e){
     	Assert.assertTrue(true);
     }}
+	@Test
+	public void springApplication_run(){
+		String[] args= new String[3];
+		SpringApplication.run(DemoApplicationTests.class, args);
+		Assert.assertTrue(true);
+	}
 }
