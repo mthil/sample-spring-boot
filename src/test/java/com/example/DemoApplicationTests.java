@@ -133,10 +133,10 @@ public class DemoApplicationTests {
     catch(Exception e){
     	Assert.assertTrue(true);
     }}
-	@Test
-	public void springApplication_run(){
-		String[] args= new String[3];
-		SpringApplication.run(DemoApplicationTests.class, args);
-		Assert.assertTrue(true);
-	}
+//	@Test
+//	public void springApplication_run(){
+//		String[] args= new String[3];
+//		SpringApplication.run(DemoApplicationTests.class, args);
+//		Assert.assertTrue(true);
+//	}
 }
