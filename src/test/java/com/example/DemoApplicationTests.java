@@ -20,7 +20,11 @@ public class DemoApplicationTests {
 	@BeforeClass
     public static void testAddition() throws Exception
     {System.out.println("beforeClass addition");
+    if(DemoApplication.additionner(5, 3)==8){
     Assert.assertTrue(true);
+    }else{
+    	Assert.assertTrue(false);
+    }
     }
 	
     @After
