@@ -1,6 +1,7 @@
 package com.example;
 
 import org.junit.Assert;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.SpringApplication;
@@ -124,7 +125,7 @@ public class DemoApplicationTests {
     }
     }
 
-	@Test
+	@Ignore
     public  void diviser_null_and_null_should_give_exception_return() throws Exception
     {
     try{
